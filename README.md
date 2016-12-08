@@ -2,6 +2,12 @@
 This repository contains the Dockerfiles that I use for various
 odds and ends.
 
+* Python 2 - creates a simple Python 2 environment with PIP installed:
+```shell
+docker build --rm -t <username>/python2 .
+docker run -ti --rm -v ./src:/src <username>/python2
+```
+
 * Python 3 - creates a simple Python 3 environment with PIP installed:
 ```shell
 docker build --rm -t <username>/python3 .
