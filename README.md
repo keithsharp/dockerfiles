@@ -20,6 +20,12 @@ docker build --rm -t <username>/cpp .
 docker run -ti --rm -v ./src:/src <username>/cpp
 ```
 
+* [Packer](https://github.com/keithsharp/dockerfiles/tree/master/Packer) - creates a tiny container with only the [Packer](https://packer.io) binary installed:
+```shell
+docker build --rm -t <username>/packer .
+docker run -ti --rm <username>/packer
+```
+
 ## Contact and Copyright
 All files in this repository are Copyright 2016, Keith Sharp.  They are
 licensed under the GNU GPL Version 3.  If you have got any questions, drop an
