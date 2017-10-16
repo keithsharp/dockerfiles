@@ -26,6 +26,12 @@ docker build --rm -t <username>/packer .
 docker run -ti --rm <username>/packer
 ```
 
+* [Pandoc](https://github.com/keithsharp/dockerfiles/tree/master/Pandoc) - creates a container based on [Fedora](https://getfedora.org) 26 with [Pandoc](https://www.pandoc.org), [Texlive](https://www.tug.org/texlive/), and [Make](https://www.gnu.org/software/make/) installed for document processing:
+```shell
+docker build --rm -t <username>/pandoc .
+docker run -ti --rm -v ./src:/src <username>/pandoc /bin/bash
+```
+
 ## Contact and Copyright
 All files in this repository are Copyright 2016, Keith Sharp.  They are
 licensed under the GNU GPL Version 3.  If you have got any questions, drop an
