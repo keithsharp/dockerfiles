@@ -2,6 +2,12 @@
 This repository contains the Dockerfiles that I use for various
 odds and ends.
 
+* [Rust](https://github.com/keithsharp/dockerfiles/tree/master/Rust) - use the same techniques as the [official Rust images](https://github.com/rust-lang/docker-rust/tree/master), but use Fedora as a base:
+```shell
+docker build --rm -t <username>/rust:1.71.0-fedora38 .
+docker run -ti --rm -v ./src:/src <username>/rust:1.71.0-fedora38
+```
+
 * [Python 2](https://github.com/keithsharp/dockerfiles/tree/master/Python2) - creates a simple Python 2 environment with PIP installed:
 ```shell
 docker build --rm -t <username>/python2 .
